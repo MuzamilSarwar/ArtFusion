@@ -1,3 +1,20 @@
 #home{
     background-image: url('https://res.cloudinary.com/dvm5zblev/image/upload/v1766400079/WhatsApp_Image_2025-12-22_at_3.37.16_PM_duct79.jpg');
 }
+
+#gallery{
+    background-image: url('https://res.cloudinary.com/dvm5zblev/image/upload/v1766402973/WhatsApp_Image_2025-12-22_at_3.37.17_PM_r7hnsa.jpg');
+}
+#vision{
+    background-image: url('https://res.cloudinary.com/dvm5zblev/image/upload/v1766403101/WhatsApp_Image_2025-12-22_at_3.37.17_PM_1_swynwx.jpg');
+}
+#about{
+    background-image: url('https://res.cloudinary.com/dvm5zblev/image/upload/v1766403101/WhatsApp_Image_2025-12-22_at_3.37.17_PM_1_swynwx.jpg');
+}
+
+.cormorant-garamond {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700 ;
+  font-style: italic;
+}
