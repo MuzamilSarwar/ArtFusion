@@ -23,3 +23,10 @@
   font-weight: 700 ;
   font-style: italic;
 }
+
+.cormorant-garamond1 {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700 ;
+  font-style: normal;
+}
