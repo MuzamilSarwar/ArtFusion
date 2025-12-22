@@ -11,22 +11,10 @@
 #about{
     background-image: url('https://res.cloudinary.com/dvm5zblev/image/upload/v1766403101/WhatsApp_Image_2025-12-22_at_3.37.17_PM_1_swynwx.jpg');
 }
-/* #art{
-font-size: 120px;
-  font-weight: 900;
-  line-height: 1;
-  display: inline-block;
-
-  background-image: url("https://res.cloudinary.com/dvm5zblev/image/upload/v1766406024/WhatsApp_Image_2025-12-22_at_5.17.52_PM-removebg-preview_bxbe7p.png");
-  background-repeat: repeat;     /* 🔥 KEY CHANGE */
-  background-position: center;
-  background-size: 120px auto;   /* 🔥 CONTROL SIZE */
-
-  color: transparent;
-  -webkit-text-fill-color: transparent; /* 🔥 REQUIRED for Safari */
-  -webkit-background-clip: text;
-  background-clip: text;
-} */
+#mobileMenuBtn{
+    justify-content: end;
+    align-items: end;
+}
 
 
 .cormorant-garamond {
