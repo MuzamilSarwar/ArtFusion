@@ -1,4 +1,4 @@
-#home{
+/* #home{
     background-image: url('https://res.cloudinary.com/dvm5zblev/image/upload/v1766400079/WhatsApp_Image_2025-12-22_at_3.37.16_PM_duct79.jpg');
 }
 
@@ -14,8 +14,15 @@
 #mobileMenuBtn{
     justify-content: end;
     align-items: end;
-}
+} */
 
+body{
+    background-image: url("https://res.cloudinary.com/dvm5zblev/image/upload/v1766400079/WhatsApp_Image_2025-12-22_at_3.37.16_PM_duct79.jpg");
+    
+}
+p{
+    color: white;
+}
 
 .cormorant-garamond {
   font-family: "Cormorant Garamond", serif;
