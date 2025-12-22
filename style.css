@@ -24,7 +24,8 @@ p{
     color: white;
 }
 
-.cormorant-garamond {
+
+#desktopMenu,#mobileMenu,.cormorant-garamond {
   font-family: "Cormorant Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 700 ;
