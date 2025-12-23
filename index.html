@@ -25,33 +25,9 @@
           <!-- DESKTOP MENU -->
           <div id="desktopMenu" class="hidden md:flex ml-auto space-x-8">
               <a href="#home" class="text-neutral-700 hover:text-neutral-900 transition-colors">Home</a>
-              <div class="relative group">
-              <a href="#gallery" class="text-neutral-700 hover:text-neutral-900 transition-colors">
-                Gallery
-              </a>
-
-              <!-- Submenu -->
-              <div
-                class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md
-                      opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                      transition-all duration-200 z-50"
-              >
-                <a href="#gallery" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">
-                  All Works
-                </a>
-                <a href="#digital" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">
-                  Digital Art
-                </a>
-                <a href="#painting" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">
-                  Paintings
-                </a>
-                <a href="#photography" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">
-                  Photography
-                </a>
-              </div>
-            </div>
-
-              <!-- <a href="#gallery" class="text-neutral-700 hover:text-neutral-900 transition-colors">Gallery</a> -->
+              <a href="#gallery" class="text-neutral-700 hover:text-neutral-900 transition-colors">Paintings</a>
+              <a href="#resin" class="text-neutral-700 hover:text-neutral-900 transition-colors">Resin Art</a>
+              <a href="#scented" class="text-neutral-700 hover:text-neutral-900 transition-colors">Scented candles</a>
               <a href="#vision" class="text-neutral-700 hover:text-neutral-900 transition-colors">Vision</a>
               <a href="#about" class="text-neutral-700 hover:text-neutral-900 transition-colors">About</a>
               <a href="#contact" class="text-neutral-700 hover:text-neutral-900 transition-colors">Contact</a>
@@ -76,28 +52,9 @@
       <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
           <div class="px-6 py-4 space-y-3">
           <a href="#home" class="block text-neutral-700 hover:text-neutral-900">Home</a>
-          <div>
-  <button
-    id="mobileGalleryBtn"
-    class="flex items-center justify-between w-full text-neutral-700 hover:text-neutral-900"
-  >
-    <span>Gallery</span>
-    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-        d="M19 9l-7 7-7-7"></path>
-    </svg>
-  </button>
-
-  <!-- Mobile Submenu -->
-  <div id="mobileGalleryMenu" class="hidden pl-4 mt-2 space-y-2">
-    <a href="#gallery" class="block text-neutral-700">All Works</a>
-    <a href="#digital" class="block text-neutral-700">Digital Art</a>
-    <a href="#painting" class="block text-neutral-700">Paintings</a>
-    <a href="#photography" class="block text-neutral-700">Photography</a>
-  </div>
-</div>
-
-          <!-- <a href="#gallery" class="block text-neutral-700 hover:text-neutral-900">Gallery</a> -->
+          <a href="#gallery" class="block text-neutral-700 hover:text-neutral-900">Paintings</a>
+          <a href="#resin" class="block text-neutral-700 hover:text-neutral-900">Resin Art</a>
+          <a href="#scented" class="block text-neutral-700 hover:text-neutral-900">Scented candles</a>
           <a href="#vision" class="block text-neutral-700 hover:text-neutral-900">Vision</a>
           <a href="#about" class="block text-neutral-700 hover:text-neutral-900">About</a>
           <a href="#contact" class="block text-neutral-700 hover:text-neutral-900">Contact</a>
@@ -228,6 +185,215 @@
       </div>
     </section>
 
+     <section id="resin" class="py-20 px-6 lg:px-8 ">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <h2 class="text-4xl font-bold cormorant-garamond text-amber-600 mb-4">Resin Art</h2>
+          <p class="text-neutral-600 max-w-2xl text-white">
+            “A visual diary of my creations.”
+             Where colors, textures, and emotions come together—each piece telling its own quiet story.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384911/IMG_20230721_183606_272_i5vilu.webp"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384895/IMG_20230614_045105_973_fxiils.webp"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384894/IMG_20230612_004857_117_jniv29.webp"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384897/IMG_20230628_130850_960_klxms9.jpg"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384977/Pic_-4540794619827257321_0_mow8ar.png"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384943/Pic_-3411029103922274517_0_d6djrv.png"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
+          </div>
+        </div>
+
+        </div>
+        <div id="imageModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+          <img id="modalImage" class="max-w-[90%] max-h-[90%] rounded-lg" />
+        </div>
+
+      </div>
+    </section>
+
+     <section id="scented" class="py-20 px-6 lg:px-8 ">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <h2 class="text-4xl font-bold cormorant-garamond text-amber-600 mb-4">Scented Candles</h2>
+          <p class="text-neutral-600 max-w-2xl text-white">
+            “A visual diary of my creations.”
+             Where colors, textures, and emotions come together—each piece telling its own quiet story.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384991/Pic_7967539297417884717_0_gi1p20.png"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384991/Pic_-8687674575211524408_0_axuyc3.png"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384941/Pic_2832235752053210925_0_ou0qi9.png"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384977/Pic_-4443877834270040659_0_xrmkrj.png"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384977/Pic_-4540794619827257321_0_mow8ar.png"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384943/Pic_-3411029103922274517_0_d6djrv.png"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
+          </div>
+        </div>
+
+        </div>
+        <div id="imageModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+          <img id="modalImage" class="max-w-[90%] max-h-[90%] rounded-lg" />
+        </div>
+
+      </div>
+    </section>
+
+
      <section id="vision" class="py-20 px-6 lg:px-8">
       <div class="max-w-7xl mx-auto">
         <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -338,16 +504,7 @@
       const closeIcon = document.getElementById('closeIcon');
       const mobileLinks = document.querySelectorAll('#mobileMenu a');
       const modal = document.getElementById("imageModal");
-      const modalImg = document.getElementById("modalImage");
-      const mobileGalleryBtn = document.getElementById("mobileGalleryBtn");
-      const mobileGalleryMenu = document.getElementById("mobileGalleryMenu");
-
-      if (mobileGalleryBtn) {
-        mobileGalleryBtn.addEventListener("click", () => {
-          mobileGalleryMenu.classList.toggle("hidden");
-        });
-      }
-      
+      const modalImg = document.getElementById("modalImage");     
 
       modal.addEventListener("click", () => {
         modal.classList.add("hidden");
