@@ -7,115 +7,103 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-    <!-- <style>
-      /* Custom styles can go here */
-      #home{
-            background-image: url('assets/home_bg.jfif');
-        }
-    </style> -->
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
   </head>
   <body class="bg-neutral-50">
-    <!-- <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+    <nav class="fixed h-20 top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-          <div class="text-4xl font-bold tracking-tight cormorant-garamond">
-            <img src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766409533/WhatsApp_Image_2025-12-22_at_6.14.44_PM-removebg-preview_a0gg0n.png" height="200" width="200" />
-
+          <div class="relative flex items-center h-16">
+          <!-- LOGO -->
+          <div class="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0
+                  text-4xl font-bold tracking-tight cormorant-garamond">        
+            <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766409533/WhatsApp_Image_2025-12-22_at_6.14.44_PM-removebg-preview_a0gg0n.png"
+            class="h-18 sm:h-20 md:h-16 w-auto scale-125"  alt="Logo"/>
           </div>
 
-          <div class="hidden md:flex space-x-8">
-            <a href="#home" class="text-neutral-700 hover:text-neutral-900 transition-colors">Home</a>
-            <a href="#gallery" class="text-neutral-700 hover:text-neutral-900 transition-colors">Gallery</a>
-            <a href="#vision" class="text-neutral-700 hover:text-neutral-900 transition-colors">Vision</a>
-            <a href="#about" class="text-neutral-700 hover:text-neutral-900 transition-colors">About</a>
-            <a href="#contact" class="text-neutral-700 hover:text-neutral-900 transition-colors">Contact</a>
+          <!-- DESKTOP MENU -->
+          <div id="desktopMenu" class="hidden md:flex ml-auto space-x-8">
+              <a href="#home" class="text-neutral-700 hover:text-neutral-900 transition-colors">Home</a>
+              <div class="relative group">
+              <a href="#gallery" class="text-neutral-700 hover:text-neutral-900 transition-colors">
+                Gallery
+              </a>
+
+              <!-- Submenu -->
+              <div
+                class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md
+                      opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                      transition-all duration-200 z-50"
+              >
+                <a href="#gallery" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">
+                  All Works
+                </a>
+                <a href="#digital" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">
+                  Digital Art
+                </a>
+                <a href="#painting" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">
+                  Paintings
+                </a>
+                <a href="#photography" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">
+                  Photography
+                </a>
+              </div>
+            </div>
+
+              <!-- <a href="#gallery" class="text-neutral-700 hover:text-neutral-900 transition-colors">Gallery</a> -->
+              <a href="#vision" class="text-neutral-700 hover:text-neutral-900 transition-colors">Vision</a>
+              <a href="#about" class="text-neutral-700 hover:text-neutral-900 transition-colors">About</a>
+              <a href="#contact" class="text-neutral-700 hover:text-neutral-900 transition-colors">Contact</a>
           </div>
 
-          <button id="mobileMenuBtn" class="md:hidden">
-            <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-            <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
+          <!-- MOBILE MENU BUTTON -->
+          <button id="mobileMenuBtn" class="ml-auto md:hidden">
+              <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+              <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
           </button>
-        </div>
+
+          </div>
       </div>
 
+      <!-- MOBILE MENU -->
       <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
-        <div class="px-6 py-4 space-y-3">
+          <div class="px-6 py-4 space-y-3">
           <a href="#home" class="block text-neutral-700 hover:text-neutral-900">Home</a>
-          <a href="#gallery" class="block text-neutral-700 hover:text-neutral-900">Gallery</a>
+          <div>
+  <button
+    id="mobileGalleryBtn"
+    class="flex items-center justify-between w-full text-neutral-700 hover:text-neutral-900"
+  >
+    <span>Gallery</span>
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+
+  <!-- Mobile Submenu -->
+  <div id="mobileGalleryMenu" class="hidden pl-4 mt-2 space-y-2">
+    <a href="#gallery" class="block text-neutral-700">All Works</a>
+    <a href="#digital" class="block text-neutral-700">Digital Art</a>
+    <a href="#painting" class="block text-neutral-700">Paintings</a>
+    <a href="#photography" class="block text-neutral-700">Photography</a>
+  </div>
+</div>
+
+          <!-- <a href="#gallery" class="block text-neutral-700 hover:text-neutral-900">Gallery</a> -->
           <a href="#vision" class="block text-neutral-700 hover:text-neutral-900">Vision</a>
           <a href="#about" class="block text-neutral-700 hover:text-neutral-900">About</a>
           <a href="#contact" class="block text-neutral-700 hover:text-neutral-900">Contact</a>
-        </div>
+          </div>
       </div>
-    </nav> -->
-
-    <nav class="fixed h-20 top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="relative flex items-center h-16">
-
-            <!-- LOGO -->
-            <div
-                class="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0
-                    text-4xl font-bold tracking-tight cormorant-garamond"
-            >
-                <!-- <img
-                src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766409533/WhatsApp_Image_2025-12-22_at_6.14.44_PM-removebg-preview_a0gg0n.png"
-                class="h-20 w-auto"
-                alt="Logo"
-                /> -->
-        <img
-        src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766409533/WhatsApp_Image_2025-12-22_at_6.14.44_PM-removebg-preview_a0gg0n.png"
-        class="h-18 sm:h-20 md:h-16 w-auto scale-125"
-        alt="Logo"
-        />
-
-
-
-            </div>
-
-            <!-- DESKTOP MENU -->
-            <div id="desktopMenu" class="hidden md:flex ml-auto space-x-8">
-                <a href="#home" class="text-neutral-700 hover:text-neutral-900 transition-colors">Home</a>
-                <a href="#gallery" class="text-neutral-700 hover:text-neutral-900 transition-colors">Gallery</a>
-                <a href="#vision" class="text-neutral-700 hover:text-neutral-900 transition-colors">Vision</a>
-                <a href="#about" class="text-neutral-700 hover:text-neutral-900 transition-colors">About</a>
-                <a href="#contact" class="text-neutral-700 hover:text-neutral-900 transition-colors">Contact</a>
-            </div>
-
-            <!-- MOBILE MENU BUTTON -->
-            <button id="mobileMenuBtn" class="ml-auto md:hidden">
-                <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-                <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-
-            </div>
-        </div>
-
-        <!-- MOBILE MENU -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
-            <div class="px-6 py-4 space-y-3">
-            <a href="#home" class="block text-neutral-700 hover:text-neutral-900">Home</a>
-            <a href="#gallery" class="block text-neutral-700 hover:text-neutral-900">Gallery</a>
-            <a href="#vision" class="block text-neutral-700 hover:text-neutral-900">Vision</a>
-            <a href="#about" class="block text-neutral-700 hover:text-neutral-900">About</a>
-            <a href="#contact" class="block text-neutral-700 hover:text-neutral-900">Contact</a>
-            </div>
-        </div>
     </nav>
-
 
     <section id="home" class="pt-32 pb-0 px-6 lg:px-8">
       <div class="max-w-7xl mx-auto">
@@ -147,66 +135,96 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-            <img src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384991/Pic_7967539297417884717_0_gi1p20.png" alt="Abstract Dreams" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <!-- <h3 class="text-xl font-semibold mb-1">Abstract Dreams</h3>
-                <p class="text-sm text-neutral-300">Digital</p> -->
-              </div>
-            </div>
-          </div>
 
-          <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-            <img src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384991/Pic_-8687674575211524408_0_axuyc3.png" alt="Urban Reflections" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <!-- <h3 class="text-xl font-semibold mb-1">Urban Reflections</h3>
-                <p class="text-sm text-neutral-300">Photography</p> -->
-              </div>
-            </div>
-          </div>
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384991/Pic_7967539297417884717_0_gi1p20.png"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
 
-          <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-            <img src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384941/Pic_2832235752053210925_0_ou0qi9.png" alt="Nature's Palette" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <!-- <h3 class="text-xl font-semibold mb-1">Nature's Palette</h3>
-                <p class="text-sm text-neutral-300">Painting</p> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-            <img src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384977/Pic_-4443877834270040659_0_xrmkrj.png" alt="Minimalist Forms" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <!-- <h3 class="text-xl font-semibold mb-1">Minimalist Forms</h3>
-                <p class="text-sm text-neutral-300">Digital</p> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-            <img src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384977/Pic_-4540794619827257321_0_mow8ar.png" alt="Golden Hour" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <!-- <h3 class="text-xl font-semibold mb-1">Golden Hour</h3>
-                <p class="text-sm text-neutral-300">Photography</p> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-            <img src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384943/Pic_-3411029103922274517_0_d6djrv.png" alt="Textured Reality" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <!-- <h3 class="text-xl font-semibold mb-1">Textured Reality</h3>
-                <p class="text-sm text-neutral-300">Mixed Media</p> -->
-              </div>
-            </div>
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
           </div>
         </div>
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384991/Pic_-8687674575211524408_0_axuyc3.png"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384941/Pic_2832235752053210925_0_ou0qi9.png"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384977/Pic_-4443877834270040659_0_xrmkrj.png"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384977/Pic_-4540794619827257321_0_mow8ar.png"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+          <img
+            src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384943/Pic_-3411029103922274517_0_d6djrv.png"
+            alt="Abstract Dreams"
+            onclick="openModal(this.src)"
+            class="cursor-pointer w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white"></div>
+          </div>
+        </div>
+
+        </div>
+        <div id="imageModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+          <img id="modalImage" class="max-w-[90%] max-h-[90%] rounded-lg" />
+        </div>
+
       </div>
     </section>
 
@@ -319,6 +337,28 @@
       const menuIcon = document.getElementById('menuIcon');
       const closeIcon = document.getElementById('closeIcon');
       const mobileLinks = document.querySelectorAll('#mobileMenu a');
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+      const mobileGalleryBtn = document.getElementById("mobileGalleryBtn");
+      const mobileGalleryMenu = document.getElementById("mobileGalleryMenu");
+
+      if (mobileGalleryBtn) {
+        mobileGalleryBtn.addEventListener("click", () => {
+          mobileGalleryMenu.classList.toggle("hidden");
+        });
+      }
+      
+
+      modal.addEventListener("click", () => {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      });
+
+      function openModal(src) {
+        modalImg.src = src;
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+      }
 
       mobileMenuBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
@@ -333,6 +373,8 @@
           closeIcon.classList.add('hidden');
         });
       });
+
+      
     </script>
   </body>
 </html>
