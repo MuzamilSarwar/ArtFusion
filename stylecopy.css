@@ -1,0 +1,48 @@
+.art-card {
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.art-card:hover {
+  transform: translateY(-6px);
+}
+
+.art-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.art-cta {
+  padding: 16px;
+  text-align: center;
+}
+
+.art-cta p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.art-cta a {
+  display: inline-block;
+  background: #22c55e;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.section-cta {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.section-cta a {
+  background: #22c55e;
+  padding: 14px 36px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}

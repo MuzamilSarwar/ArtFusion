@@ -1,197 +1,153 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Art Fusion</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArtFusion — Handmade Art & Crafts</title>
 
-<body class="bg-neutral-50">
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- ================= NAV ================= -->
-<nav class="fixed h-20 top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
-  <div class="max-w-7xl mx-auto px-6 lg:px-8">
-    <div class="relative flex items-center h-16">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="stylecopy.css" />
 
-      <div class="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0
-                  text-4xl font-bold tracking-tight cormorant-garamond">
-        <img
-          src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766409533/WhatsApp_Image_2025-12-22_at_6.14.44_PM-removebg-preview_a0gg0n.png"
-          class="h-18 sm:h-20 md:h-16 w-auto scale-125"
-          alt="Logo"
-        />
-      </div>
+  <!-- Meta -->
+  <meta name="description" content="Handmade paintings, resin art and scented candles. Order directly via WhatsApp." />
+</head>
 
-      <div id="desktopMenu" class="hidden md:flex ml-auto space-x-8">
-        <a href="#home" class="text-neutral-700 hover:text-neutral-900 transition-colors">Home</a>
-        <a href="#gallery" class="text-neutral-700 hover:text-neutral-900 transition-colors">Gallery</a>
-        <a href="#vision" class="text-neutral-700 hover:text-neutral-900 transition-colors">Vision</a>
-        <a href="#about" class="text-neutral-700 hover:text-neutral-900 transition-colors">About</a>
-        <a href="#contact" class="text-neutral-700 hover:text-neutral-900 transition-colors">Contact</a>
-      </div>
+<body class="bg-neutral-900 text-white">
 
-      <button id="mobileMenuBtn" class="ml-auto md:hidden">
-        <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-        <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-      </button>
+<!-- ================= HERO ================= -->
+<section class="min-h-screen flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1513364776144-60967b0f800f')] bg-cover bg-center">
+  <div class="bg-black/60 w-full min-h-screen flex items-center">
+    <div class="max-w-5xl mx-auto px-6 text-center">
 
-    </div>
-  </div>
-
-  <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
-    <div class="px-6 py-4 space-y-3">
-      <a href="#home" class="block text-neutral-700 hover:text-neutral-900">Home</a>
-      <a href="#gallery" class="block text-neutral-700 hover:text-neutral-900">Gallery</a>
-      <a href="#vision" class="block text-neutral-700 hover:text-neutral-900">Vision</a>
-      <a href="#about" class="block text-neutral-700 hover:text-neutral-900">About</a>
-      <a href="#contact" class="block text-neutral-700 hover:text-neutral-900">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<!-- ================= HOME ================= -->
-<section id="home" class="pt-32 pb-0 px-6 lg:px-8">
-  <div class="max-w-7xl mx-auto">
-    <div class="max-w-3xl">
-      <h1 class="text-3xl md:text-7xl font-bold cormorant-garamond1 mb-6 leading-tight">
-        Creating Art That
-        <span class="block text-amber-600 cormorant-garamond">"Tells Stories"</span>
+      <h1 class="text-4xl sm:text-5xl font-bold mb-6">
+        Handmade Art That Speaks Emotion
       </h1>
 
-      <p class="text-xl text-neutral-600 mb-8 leading-relaxed text-white">
-        Welcome to our creative space. Every piece we create is more than just décor—it’s a story captured in color, texture, and design.
+      <p class="text-lg text-white/80 mb-10">
+        Custom paintings, resin art & scented candles — crafted with love.
       </p>
 
-      <p class="text-xl text-neutral-600 mb-8 leading-relaxed text-white">
-        Each artwork is thoughtfully crafted to connect with people, transforming spaces into personal narratives and experiences.
-      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/923337660501?text=Hello%20ArtFusion,%20I%20want%20to%20order%20your%20artwork."
+           target="_blank"
+           class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-lg text-lg font-semibold transition">
+          Order via WhatsApp
+        </a>
 
-      <a href="#gallery" class="inline-block bg-neutral-900 text-white px-8 py-3 rounded-lg hover:bg-neutral-800 transition-colors">
-        View My Work
-      </a>
+        <a href="#gallery"
+           class="border border-white/40 px-8 py-4 rounded-lg hover:bg-white/10 transition">
+          View Gallery
+        </a>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- ================= GALLERY ================= -->
-<section id="gallery" class="py-20 px-6 lg:px-8">
-  <div class="max-w-7xl mx-auto">
+<section id="gallery" class="py-20 max-w-7xl mx-auto px-6">
+  <h2 class="text-3xl font-bold text-center mb-12">Paintings</h2>
 
-    <div class="mb-12">
-      <h2 class="text-4xl font-bold cormorant-garamond text-amber-600 mb-4">Gallery</h2>
-      <p class="text-neutral-600 max-w-2xl text-white">
-        “A visual diary of my creations.”
-      </p>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+    <!-- CARD -->
+    <div class="art-card">
+      <img src="https://res.cloudinary.com/demo/image/upload/sample.jpg" alt="Artwork" />
+      <div class="art-cta">
+        <p>Handmade • Custom Available</p>
+        <a href="https://wa.me/923337660501?text=Hello%20ArtFusion,%20I%20am%20interested%20in%20this%20painting."
+           target="_blank">
+          Get Price on WhatsApp
+        </a>
+      </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Duplicate cards as needed -->
 
-      <!-- IMAGE -->
-      <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-        <img
-          src="https://res.cloudinary.com/dvm5zblev/image/upload/v1766384991/Pic_7967539297417884717_0_gi1p20.png"
-          class="gallery-image w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer"
-        />
-        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent
-             opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+  </div>
+
+  <div class="section-cta">
+    <a href="https://wa.me/923337660501?text=Hello%20ArtFusion,%20I%20want%20a%20custom%20painting."
+       target="_blank">
+      Start Custom Order
+    </a>
+  </div>
+</section>
+
+<!-- ================= RESIN ================= -->
+<section id="resin" class="py-20 bg-neutral-800">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Resin Art</h2>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="art-card">
+        <img src="https://res.cloudinary.com/demo/image/upload/sample.jpg" />
+        <div class="art-cta">
+          <p>Premium Resin Finish</p>
+          <a href="https://wa.me/923337660501?text=Hello%20ArtFusion,%20I%20am%20interested%20in%20your%20resin%20art."
+             target="_blank">
+            Get Price on WhatsApp
+          </a>
+        </div>
       </div>
+    </div>
 
-      <!-- REPEAT (unchanged except class) -->
-      <!-- All remaining images kept exactly the same -->
-
-      <!-- (remaining 5 images unchanged from your file, only gallery-image added and pointer-events-none) -->
-
+    <div class="section-cta">
+      <a href="https://wa.me/923337660501?text=Hello%20ArtFusion,%20I%20want%20to%20order%20resin%20art."
+         target="_blank">
+        Order Resin Art
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ================= MODAL ================= -->
-<div id="galleryModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-[9999]">
-  <img id="galleryModalImage" class="max-w-[90%] max-h-[90%] rounded-lg shadow-2xl">
-</div>
+<!-- ================= CANDLES ================= -->
+<section id="candles" class="py-20 max-w-7xl mx-auto px-6">
+  <h2 class="text-3xl font-bold text-center mb-12">Scented Candles</h2>
 
-<!-- ================= VISION ================= -->
-<!-- UNCHANGED -->
-<section id="vision" class="py-20 px-6 lg:px-8">
-  <!-- your vision section EXACTLY as provided -->
-</section>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <div class="art-card">
+      <img src="https://res.cloudinary.com/demo/image/upload/sample.jpg" />
+      <div class="art-cta">
+        <p>Long Lasting Fragrance</p>
+        <a href="https://wa.me/923337660501?text=Hello%20ArtFusion,%20I%20am%20interested%20in%20your%20scented%20candles."
+           target="_blank">
+          Get Price on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
 
-<!-- ================= ABOUT ================= -->
-<section id="about" class="py-20 px-6 lg:px-8">
-  <!-- your about section EXACTLY as provided -->
+  <div class="section-cta">
+    <a href="https://wa.me/923337660501?text=Hello%20ArtFusion,%20I%20want%20to%20order%20candles."
+       target="_blank">
+      Order Candles
+    </a>
+  </div>
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section id="contact" class="py-20 px-6 lg:px-8 bg-neutral-900 text-white">
-  <!-- your contact section EXACTLY as provided -->
+<section id="contact" class="py-20 bg-neutral-800 text-center">
+  <h2 class="text-3xl font-bold mb-6">Let’s Talk</h2>
+  <p class="text-white/80 mb-10">Fastest response on WhatsApp</p>
+
+  <a href="https://wa.me/923337660501?text=Hello%20ArtFusion,%20I%20want%20to%20place%20an%20order."
+     target="_blank"
+     class="bg-green-500 hover:bg-green-600 px-10 py-4 rounded-lg text-lg font-semibold transition">
+    Chat on WhatsApp
+  </a>
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer class="bg-neutral-950 text-neutral-400 py-8 px-6 lg:px-8">
-  <div class="max-w-7xl mx-auto text-center">
-    <p>© 2025 Art Fusion. All rights reserved.</p>
-  </div>
-</footer>
-
-<!-- ================= JS ================= -->
-<script>
-  // Mobile menu
-  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const menuIcon = document.getElementById('menuIcon');
-  const closeIcon = document.getElementById('closeIcon');
-
-  mobileMenuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-    menuIcon.classList.toggle('hidden');
-    closeIcon.classList.toggle('hidden');
-  });
-
-  document.querySelectorAll('#mobileMenu a').forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
-      menuIcon.classList.remove('hidden');
-      closeIcon.classList.add('hidden');
-    });
-  });
-
-  // Gallery modal (reusable)
-  const modal = document.getElementById("galleryModal");
-  const modalImg = document.getElementById("galleryModalImage");
-
-  document.querySelectorAll(".gallery-image").forEach(img => {
-    img.addEventListener("click", () => {
-      modalImg.src = img.src;
-      modal.classList.remove("hidden");
-      modal.classList.add("flex");
-    });
-  });
-
-  modal.addEventListener("click", () => {
-    modal.classList.add("hidden");
-    modal.classList.remove("flex");
-    modalImg.src = "";
-  });
-
-  document.addEventListener("keydown", e => {
-    if (e.key === "Escape") {
-      modal.classList.add("hidden");
-      modal.classList.remove("flex");
-      modalImg.src = "";
-    }
-  });
-</script>
+<!-- ================= FLOATING WHATSAPP ================= -->
+<a href="https://wa.me/923337660501?text=Hello%20ArtFusion,%20I%20found%20your%20website."
+   target="_blank"
+   class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 p-4 rounded-full shadow-lg z-50">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+       class="w-8 h-8" />
+</a>
 
 </body>
 </html>
